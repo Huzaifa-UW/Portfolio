@@ -66,9 +66,10 @@ nav a:hover {
 
 .profile-photo {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: 180px;
+    border-radius: 15%; 
     border: 3px solid #cccccc;
+  
     object-fit: cover;
     margin-right: 20px;
 }
@@ -95,13 +96,16 @@ nav a:hover {
     text-decoration: none;
     color: white;
 }
+span {
+    color: rgb(146, 146, 146);
+}
 
 /* ================= SKILLS SECTION ================= */
 .skills {
     padding: 60px 0;
     background-color: #1e1e1e;
     color: white;
-    text-shadow: 0.2px 0.2px 3px white;
+    text-shadow: 0.1px 0.1px 2px white;
 }
 
 .skills h2 {
@@ -191,11 +195,10 @@ nav a:hover {
 /* ================= EDUCATION SECTION ================= */
 .education {
     padding: 60px 0;
-
     text-align: left;
-   
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(210, 210, 210));
 
+    background-image: url(/Images/🔥\ Free\ download\ Dark\ Background\ Whatsapp\ Wallpaper\ HD\ on\ WallpaperSafari\ \(1\).jpg);
+    background-size: cover;
 }
 
 .education h2 { 
@@ -274,6 +277,8 @@ nav a:hover {
 .certificates .certificate-img:hover {
     transform: scale(1.05);
     border-color: #00aced;
+    object-fit: contain;
+
 }
 
 /* ================= CONTACT SECTION ================= */
