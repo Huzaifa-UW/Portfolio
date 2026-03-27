@@ -939,11 +939,11 @@
           <a href="Images/Resume.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
         </div>
         <div class="contact-card" id="box-contact">
-          <h3 id="contact_me">Connect with me</h3>
+          <h3>Connect with me</h3>
           <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>huzaifaalvi.wk133@gmail.com</p></div></div>
           <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><p>+92 370 5273877</p></div></div>
           <div class="contact-item"><div class="contact-icon"><i class="fab fa-github"></i></div><div><h4>GitHub</h4><p><a href="https://github.com/Huzaifa-UW" target="_blank" style="color:var(--cyan)">Huzaifa-UW</a></p></div></div>
-          <div class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp</h4><p><a href="https://wa.me/923705273877" target="_blank" style="color:var(--cyan)">Chat on WhatsApp</a></p></div></div>
+          <div id="contact_me" class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp</h4><p><a href="https://wa.me/923705273877" target="_blank" style="color:var(--cyan)">Chat on WhatsApp</a></p></div></div>
         </div>
       </div>
     </div>
@@ -1060,14 +1060,14 @@
     }
 
     // smooth anchor scroll
-    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //   anchor.addEventListener('click', function(e) {
-    //     const targetId = this.getAttribute('href');
-    //     if (targetId === "#") return;
-    //     const target = document.querySelector(targetId);
-    //     if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
-    //   });
-    // });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === "#") return;
+        const target = document.querySelector(targetId);
+        if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
+      });
+    });
 
     // dynamic canvas with particles and connecting lines (rich background)
     const canvas = document.getElementById('canvas-bg');
