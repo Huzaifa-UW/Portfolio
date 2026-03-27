@@ -1060,14 +1060,14 @@
     }
 
     // smooth anchor scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === "#") return;
-        const target = document.querySelector(targetId);
-        if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
-      });
-    });
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //   anchor.addEventListener('click', function(e) {
+    //     const targetId = this.getAttribute('href');
+    //     if (targetId === "#") return;
+    //     const target = document.querySelector(targetId);
+    //     if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
+    //   });
+    // });
 
     // dynamic canvas with particles and connecting lines (rich background)
     const canvas = document.getElementById('canvas-bg');
